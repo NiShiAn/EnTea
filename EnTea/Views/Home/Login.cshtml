@@ -1,0 +1,11 @@
+﻿@{
+    Layout = null;
+}
+
+
+@using (Html.BeginForm("UserLogin", "Home", FormMethod.Get, new { @class = "form-inline", id = "SearchForm", @style = "padding: 5px;" }))
+{
+    @Html.TextBox("name")
+    @Html.TextBox("pass")
+    <button type="submit">提交</button>
+}
